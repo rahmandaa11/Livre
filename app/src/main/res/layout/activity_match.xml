@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDark"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/btnBackMatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ffffff"
+                android:onClick="btnBackMatch"
+                app:srcCompat="@drawable/ic_back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitleLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="1"
+                    android:text="Hall A Senayan"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvTitleRegion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:text="Jabodetabek"
+                    android:textColor="#89ffffff" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spinnerSport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="22dp"
+                    android:background="@drawable/custom_spinner_background"
+                    android:popupBackground="@color/colorDark"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:text="Match available"
+                    android:textColor="#89ffffff" />
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listViewMatch"
+                android:layout_width="match_parent"
+                android:layout_height="317dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnNewmatch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/Grey"
+            android:onClick="newMatch"
+            android:text="@string/new_match"
+            android:textColor="@color/Red"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

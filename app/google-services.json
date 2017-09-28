@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "416516368912",
+    "firebase_url": "https://livre2-6698c.firebaseio.com",
+    "project_id": "livre2-6698c",
+    "storage_bucket": "livre2-6698c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416516368912:android:04145175657e0a25",
+        "android_client_info": {
+          "package_name": "com.example.rahmanda.livre2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "416516368912-iud64slm6h1q0lo0obrhgjnh5vgf7ij4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc7ops0WS0AcB-ZJGxImf0Q4BmR9qPXZc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

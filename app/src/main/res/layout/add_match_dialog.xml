@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Red"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:text="New match"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="16dp"
+        android:text="Type of sport"
+        android:textAlignment="center"
+        android:textColor="#89ffffff" />
+
+    <Spinner
+        android:id="@+id/spinnerSport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/red_spinner_background"
+        android:popupBackground="@color/colorDark"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="20dp"
+        android:text="Match between"
+        android:textAlignment="center"
+        android:textColor="#89ffffff" />
+
+    <EditText
+        android:id="@+id/editTextTeam1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_text"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="20dp"
+        android:text="Againist"
+        android:textAlignment="center"
+        android:textColor="#89ffffff" />
+
+    <EditText
+        android:id="@+id/editTextTeam2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_text"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/buttonAddMatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorDark"
+        android:onClick="btnAddMatch"
+        android:text="Add Match"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+</LinearLayout>

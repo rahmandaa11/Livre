@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDark"
+    android:weightSum="10">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/my_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/Red"
+                android:elevation="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spinnerCustom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="22dp"
+                    android:background="@drawable/custom_spinner_background"
+                    android:popupBackground="@color/colorDark"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:text="Locations available"
+                    android:textColor="#89ffffff" />
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/ListViewLocation"
+                android:layout_width="match_parent"
+                android:layout_height="226dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/btnNewmatch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/Grey"
+            android:onClick="newMatch"
+            android:text="New Location"
+            android:textColor="@color/Red"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
